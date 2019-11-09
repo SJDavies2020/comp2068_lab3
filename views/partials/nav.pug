@@ -1,0 +1,36 @@
+//- File Name: nav.pug
+//- Author: Steven Davies
+//- Website Name: www.sdavies.ca
+//- Description: This is the Global Nav Bar page for the site.
+//- Updated : 2019-10-13
+header
+	nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+		button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+			span.navbar-toggler-icon
+		//- define nav bar collapse on smaller screens
+		#navbarSupportedContent.collapse.navbar-collapse
+			ul.navbar-nav.mr-auto
+				li.nav-item.active
+					a.nav-link(href='/')
+						| Home 
+						span.sr-only (current)
+				li.nav-item
+					//- Page Links below
+					a.nav-link(href='AboutME') About Me
+						li.nav-item
+					a.nav-link(href='/Projects') Projects
+						li.nav-item
+					a.nav-link(href='/Services') Services
+						li.nav-item
+					a.nav-link(href='/ContactMe') Contact Me
+
+
+			form.form-inline.my-2.my-lg-0
+				//- Search bar
+				input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
+				button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+			ul.navbar-nav.mr-auto
+				li.nav-item
+				a.nav-link(href='/login') Login
+					li.nav-item
+				a.nav-link(href='/register') Register

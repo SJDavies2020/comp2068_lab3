@@ -1,0 +1,181 @@
+/*- File Name: style.css
+//- Author: Steven Davies
+//- Website Name: www.sdavies.ca
+//- Description: This is the style sheet for the site
+//- Updated : 2019-10-13 */
+
+body {
+	background-color: #575c5f;
+}
+
+/* Index Page Image */
+
+#bg-img {
+	background: url("../images/AdobeStock_196907623.jpeg");
+	min-height: 775px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.Heading1 {
+	position: relative;
+	top: -500px;
+	right: auto;
+	left: auto;
+	color: red;
+}
+.Heading2 {
+
+	margin-top:50px;
+	margin-bottom: 50px;
+	position: relative;
+	right: auto;
+	left: auto;
+	color: red;
+}
+
+/* Box first page styles */
+
+div.eBox {
+	top: 40px;
+	position: relative;
+	height: 200px;
+	width: 200px;
+	border-color: red;
+	border-width: 1px;
+	box-sizing: content-box;
+	margin: auto;
+	align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	vertical-align: top;
+	z-index: 100;
+	border-style: solid;
+	margin-bottom: 25px;
+}
+
+img.Icon
+{
+	position: relative;
+	height: 80%;
+	display: block;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.myText1 {
+	display: inline-block;
+	position: relative;
+	top: 50px;
+}
+ul li {
+	text-align: left;
+}
+
+/* About me page Styling */
+
+.aboutMe {
+	color: white;
+	margin: auto;
+	display: inline-block;
+	position: relative;
+	top: 50px;
+	font-size: 20px;
+	width: 800px;
+}
+
+/* Contact Form Styling */
+
+#contact {
+	color: white;
+	background-color: #212529;
+	background-image: url(../img/map-image.png);
+}
+
+#contact .input-group {
+	margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+	padding: 20px;
+	font-weight: bold;
+	color: #00b0e7;
+}
+
+.input-group .form-control:focus {
+	border-color: #ffcd0f;
+	box-shadow: 0 0 10px #ffcd0f;
+}
+
+.input-group .form-control::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari/Edge */
+	font-weight: bold;
+	color: #44000080;
+}
+.input-group .form-control:-ms-input-placeholder {
+	/* IE 10+ */
+	font-weight: bold;
+	color: #44000080;
+}
+.input-group .form-control:-moz-placeholder {
+	/* Firefox 18- */
+	font-weight: bold;
+	color: #44000080;
+}
+.input-group .form-control::-moz-placeholder {
+	/* Firefox 19+ */
+	font-weight: bold;
+	color: #44000080;
+}
+
+/* Default Section Styling */
+
+section {
+	padding: 4em 0;
+	text-align: center;
+}
+
+#content1
+{
+	position: relative;
+	margin-top: 100px;
+}
+
+/* Style the Section2 Element */
+
+/* Style the Boxes */
+
+div.eBox2 {
+	margin: 50px auto;
+	top: 40px;
+	position: relative;
+	height: 500px;
+	width: 500px;
+	border-color: green;
+	border-width: 1px;
+	box-sizing: content-box;
+	align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	vertical-align: top;
+	z-index: 100;
+	border-style: solid;
+	margin-bottom: 50px;
+	font-size: 2.0rem;
+	color: white;
+}
+
+h2
+{
+	display: inline-flex;
+	position: relative;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.footer
+{
+	margin-top: 50px;
+}

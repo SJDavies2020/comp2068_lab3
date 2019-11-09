@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+	.container
+		h1 Login Form
+		form(method="post")
+			.form-group
+				label Username
+				input.form-control(name="username")
+			.form-group
+				label Password
+				input.form-control(name="password")
+			if error && error.length
+				.alert.alert-danger= error
+			a.btn.btn-secondary(href="/auth/github") Login with Github
+			button.btn.btn-primary Submit

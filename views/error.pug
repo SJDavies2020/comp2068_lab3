@@ -1,0 +1,10 @@
+extends layout
+//- File Name: Error.pug
+//- Author: Steven Davies
+//- Website Name: www.sdavies.ca
+//- Description: This is the default erros page for the site.
+//- Updated : 2019-10-13
+block content
+  h1= message
+  h2= error.status
+  pre #{error.stack}

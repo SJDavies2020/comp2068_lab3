@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+	h1 Single User
+
+	if error && error.length
+		.alert.alert-danger= error
+
+	form(method="post")
+		.form-group
+			label
+				| Role
+				select.form-control(name="role")
+					option(value="admin") Admin
+					option(value="mod") Moderator
+					option(value="user") User
+			button.btn.btn-info(type="submit") Submit
+	div= JSON.stringify(user)
